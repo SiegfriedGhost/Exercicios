@@ -1,0 +1,66 @@
+// Entrada: Sistema deve receber uma lista de objetos contendo: agência, conta, cpf, nome e saldo inicial da conta. 
+Para cada registro da lista, deve-se ter também uma lista de lançamentos contendo o valor de lançamento e o indicador 
+informando se o lançamento é um crédito ou débito. 
+
+// Saída: Sistema deve devolver uma lista de objetos contendo: agência, conta, cpf, nome, o novo saldo da conta, bem 
+como o saldo inicial, o total de débitos e o total de crédito; 
+
+//Exemplo Json entrada 
+
+{
+clientes:[
+	cliente: { 
+		agencia:1, 
+		conta:1, 
+		cpf:1. 
+		nome: "ASD", 
+		saldoInicial: 100.00,
+	lancamentos: [
+		lançamento:{
+			indicador: "D",
+			valor: 50.00
+		},
+		lancamento:{
+			indicador: "C", 
+			valor: 10.00, 
+		}
+	]
+
+	cliente: { 
+		agencia:1, 
+		conta:2, 
+		cpf:2. 
+		nome: "QWEAS", 
+		saldoInicial: 30.00,
+	lancamentos: [
+		lançamento:{
+			indicador: "C",
+			valor: 10.00
+		},
+},
+]
+}
+
+
+// Exemplo de json saída 
+
+{
+cliente: [
+	cliente: {
+		agencia: 1,
+		conta: 1,
+ 		cpf: 1,
+		nome: "ASD"
+		saldoAtual: 90.00,
+		saldoInicial: 30.00,
+		totalCreditos: 60.00,
+		totalDebitos: 0.00
+		}
+	]
+}
+	
+
+
+
+
+
