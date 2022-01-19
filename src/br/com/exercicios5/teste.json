@@ -1,0 +1,13 @@
+{
+    "cliente": { 
+        "agencia": "1", 
+        "conta": "1", 
+        "cpf": "1", 
+        "nome": "ASD", 
+        "saldoInicial": "100.00",
+        "lancamentos": [
+            {"indicador": "D", "valor": "50.00"},
+            {"indicador": "C", "valor": "10.00"}    
+        ]    
+    }
+}
